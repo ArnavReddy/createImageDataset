@@ -1,7 +1,9 @@
 # createImageDataset
 
-spam space to take images and saves properly into assigned folders
-
 pip install the needed imports and run python3 pic.py
 
-then answer prompt asking what letter you are looking for and take away
+leave this as the only item in the directory, everything else will be created for you
+
+then answer prompt asking what letter you are looking for
+
+spam space to take images and save properly into assigned folders
