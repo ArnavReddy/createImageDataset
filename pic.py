@@ -5,6 +5,24 @@ from PIL import Image
 import sys
 import os
 
+if os.path.isdir("dataset"):
+    print("dataset directory exists")
+else:
+    print("dataset directory is being created")
+    try:
+        os.chmod(os.getcwd(), 0o777)
+        #original_umask = os.umask(0)
+        letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+        i = 0
+        while i < len(letters):
+            print(letters[i].upper() + " directory is being created")
+            os.makedirs("./dataset/"+letters[i].upper(), 0o777)
+            i += 1
+    except OSError:
+        print ("Creation of all of the directories failed")
+    else:
+       print ("Successfully created all of the directories")
+
 letter = input('What letter are you going to take pictures of: ')
 list = os.listdir("./dataset/"+letter) # dir is your directory path
 img_counter = len(list)
