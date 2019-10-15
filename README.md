@@ -1,5 +1,5 @@
 # createImageDataset
-rapidly takes images and saves properly into assigned folders
+spam space to take images and saves properly into assigned folders
 create folder named "dataset" that is on the same level as pic.py
-then create folders : "A" through "Z" insude dataset folder --or you can choose what you want
-then adjust pic.py to add images into correct directory and run pic.py
+then create folders : "A" through "Z" inside dataset folder --or you can choose what you want
+then answer prompt asking what letter you are looking for and take away
